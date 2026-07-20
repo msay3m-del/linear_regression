@@ -1,12 +1,32 @@
-Prompt 1:
-I'm working on a graduate level assignment where I need to compare linear regression in python and r. Inside the ai/ folder you will find a csv file named regression_data. Use this file to generate the following files:
-1. Python and r jupyter notebooks with full explanations as markdown. Each notebook should read the csv file, create a scatter plot, fit a linear model, overlay the regression line, evaluate the model and be saved as both .ipynb and .html.
-2. Command-line scripts for both languages that can be run from the terminal that takes <filename> <x_column> <y_column> as command, they should also save the plots in png format
-3. Make an environment.yml file to create the environment
-Never look inside the manual/ folder. Ask questions if you need further information.
+# AI Prompt History
 
-Prompt 2:
-Make sure the following are present in the plots generated: scatter points, regression line, plot title, x and y-axis label.
+### 1. AI commit messages
 
-Prompt 3:
-Please reduce the font size in the final output figures. Make the figures publication quality. As needed change the interval of the values in the x and y axis.
+Generate professional git commit messages for the Assignment 3 ai/ folder work. Use imperative mood, keep each message under 72 characters in the subject line,
+and group related changes logically.
+
+### 2. AI code review
+
+Review the assignment3 pull request diff (assignment3 vs main) for this linear
+regression repository. Write a pull-request-style code review and save it as
+ai/CODE_REVIEW.md.
+
+Include:
+- A summary of what changed from Assignment 2 to Assignment 3
+- Strengths of the implementation (manual and ai folders)
+- Detailed findings with severity (High/Medium/Low), description, and recommendation
+- Suggested improvements and a recommended first change to implement
+- A final assessment (Approve, Approve with Suggestions, or Request Changes)
+- An "Addressed Feedback" section explaining at least one substantive comment
+  that was accepted and implemented
+
+Focus on correctness, documentation consistency, CLI usability, reproducibility,
+and differences between the manual and AI-assisted implementations.
+
+### 3. AI-generated README (`ai/README_AI.md`)
+
+Write README_AI.md as professional project documentation for the ai/ folder.
+Cover project overview, assignment objective, repository structure, descriptions
+of notebooks and scripts, libraries used, environment setup instructions,
+command-line examples, expected outputs, plot file descriptions, and a sample
+workflow for running the project. Do not overwrite the hand-written root README.md.
